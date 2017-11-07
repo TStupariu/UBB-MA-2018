@@ -22,6 +22,11 @@ export default class Details extends React.Component {
     title: 'Details',
   };
 
+  handlePress() {
+    const { navigate } = this.props.navigation;
+    navigate('Main', {"name" : this.state.name, "position" : this.state.position})
+  }
+
   render() {    
     return (
       <View style={styles.container}>
@@ -29,8 +34,8 @@ export default class Details extends React.Component {
       <FormLabel>Name</FormLabel>
       <FormInput value={this.state.name}/>
       <FormLabel>Position</FormLabel>
-      <FormInput value={this.state.position}/>
-      <Button raised title="SAVE"></Button>
+      <FormInput value={this.state.position} onChangeText={(position) => this.setState({position})}/>
+      <Button raised title="SAVE" onPress={() => {this.handlePress();}}></Button>
       </View>
       );
   }

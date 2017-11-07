@@ -1,5 +1,6 @@
 package com.example.tudor.ma_java;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,15 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Defined Array values to show in ListView
+    final String[] names = new String[]{"Amy Jameson", "Julia Julianssonyen"
+    };
+
+    final String[] positions = new String[]{
+            "CEO",
+            "CTO"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +55,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final ListView listView = (ListView) findViewById(R.id.employees);
-
-        // Defined Array values to show in ListView
-        String[] names = new String[]{"Amy Jameson", "Julia Julianssonyen"
-        };
-
-        final String[] positions = new String[]{
-                "CEO",
-                "CTO"
-        };
 
         // Define a new Adapter
         // First parameter - Context
@@ -93,9 +94,26 @@ public class MainActivity extends AppCompatActivity {
                 String message = entry;
                 intent.putExtra(EXTRA_MESSAGE, message);
                 intent.putExtra(EXTRA_MESSAGE_TWO, positions[position]);
-                startActivity(intent);
+                startActivityForResult(intent, 1234);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1234 && resultCode == RESULT_OK && data != null) {
+            String num1 = data.getStringExtra("Name");
+            String num2 = data.getStringExtra("Position");
+            System.out.println(num1);
+            System.out.println(num2);
+            for(int i = 0; i < names.length; i++)
+            {
+                if (num1.equals(names[i]))
+                {
+                    positions[i] = num2;
+                }
+            }
+        }
     }
 
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.NAME";

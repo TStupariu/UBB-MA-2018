@@ -1,10 +1,15 @@
 package com.example.tudor.ma_java;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Details extends AppCompatActivity {
 
@@ -21,10 +26,21 @@ public class Details extends AppCompatActivity {
         System.out.println(position);
 
         // Capture the layout's TextView and set the string as its text
-        EditText nameText = (EditText) findViewById(R.id.textName);
+        final EditText nameText = (EditText) findViewById(R.id.textName);
         nameText.setText(name);
 
-        EditText positionText = (EditText) findViewById(R.id.textPosition);
+        final EditText positionText = (EditText) findViewById(R.id.textPosition);
         positionText.setText(position);
+
+        final Button button = (Button) findViewById(R.id.btnSave);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent output = new Intent();
+                output.putExtra("Name", nameText.getText().toString());
+                output.putExtra("Position", positionText.getText().toString());
+                setResult(RESULT_OK, output);
+                finish();
+            }
+        });
     }
 }
