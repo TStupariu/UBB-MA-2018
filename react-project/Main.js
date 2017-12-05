@@ -1,8 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, StatusBar, Alert } from 'react-native';
+import { StyleSheet, Text, View, Linking, StatusBar, Alert, AsyncStorage, NetInfo } from 'react-native';
 import { FormLabel, FormInput, Button, List, ListItem } from 'react-native-elements'
 import { Details } from './Details'
 import { StackNavigator } from 'react-navigation'
+import * as firebase from "firebase";
+
+var config = {
+    apiKey: "AIzaSyCDJdA7KFgvMfwpeCAmGfYwTlK9gUh_ZDg",
+    authDomain: "ma-react-native.firebaseapp.com",
+    databaseURL: "https://ma-react-native.firebaseio.com",
+    projectId: "ma-react-native",
+    storageBucket: "ma-react-native.appspot.com",
+    messagingSenderId: "261668730554"
+  };
+firebase.initializeApp(config);
 
 export default class Main extends React.Component {
 
@@ -10,19 +21,9 @@ export default class Main extends React.Component {
     super(props);
     this.state = { 
       emailTo: "",
-      list : [
-      {
-        name: 'Amy Farha',
-        avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        position: 'CEO'
-      },
-      {
-        name: 'Chris Jackson',
-        avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        position: "CTO"
-      },
-      ]
+      list : [],
     };
+    this.ref = firebase.database().ref("/employees");
     screen: Main;
   }
 
@@ -36,9 +37,13 @@ export default class Main extends React.Component {
     }
     else {
       let emailUrl = "mailto:?to=" + this.state.emailTo
-      console.log(emailUrl)
       Linking.openURL(emailUrl)
     }
+  }
+
+  handleAdd() {
+    const { navigate } = this.props.navigation;
+    navigate('AddEmployee')
   }
 
   componentWillMount() {
@@ -56,25 +61,61 @@ export default class Main extends React.Component {
     }
   }
 
-  handleListItemPress(name, position) {
+  async componentDidMount() {
+    NetInfo.isConnected.fetch().done(async (isConnected) => {
+      if ( isConnected )
+      {
+        let list = this.ref.once('value').then((data) => {
+          data = data.val()
+          data2 = Object.keys(data).map(function (key) { return {'Person' : data[key], "Key" : key}; });
+          this.setState({list: data2})
+          AsyncStorage.setItem("list", JSON.stringify(data2))
+        })
+      }
+      else
+      {
+        let list = JSON.parse(await AsyncStorage.getItem("list"))
+        this.setState({list})
+      }
+    });
+  }
+
+  handleListItemPress(name, position, key) {
     const { navigate } = this.props.navigation;
-    navigate('Details', {"name" : name, "position" : position})
+    navigate('Details', {"name" : name, "position" : position, "key" : key})
   }
 
   setPosition(name,position) {
-    console.log(name,position)
     list = this.state.list;
     for (var i = 0; i < list.length; i++) {
-      // console.log(name,list[i].name)
       if (name == list[i].name) {
         list[i].position = position;
       }
     }
-    // console.log(list)
+  }
+
+  acceptDelete(l, idx) {
+    let deleteUrl = this.ref.child(l.Key)
+    deleteUrl.remove()
+    let list = this.state.list
+    list.splice(idx, 1)
+    this.setState({list}) 
+  }
+
+  async handleLongPress(l, idx) {
+    var value = await AsyncStorage.getItem("list");
+    Alert.alert(
+      'Delete ' + l.Person.Name,
+      'Are you sure you want to delete this person?',
+      [
+        {text: 'Yes', onPress: () => this.acceptDelete(l, idx)},
+        {text: 'No', style: 'cancel'},
+      ],
+      { cancelable: false }
+    )
   }
 
   render() {
-    // console.log(this.props)    
     let list = this.state.list;
     return (
       <View style={styles.container}>
@@ -82,23 +123,24 @@ export default class Main extends React.Component {
       <FormLabel>Name</FormLabel>
       <FormInput ref= {(el) => { this.emailTo = el; }} onChangeText={(emailTo) => this.setState({emailTo})} value={this.state.emailTo}/>
     <Button title="SEND EMAIL" raised onPress={() => this.sendEmail()}></Button>
-
+    <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
 
     <List containerStyle={{width: 300}}>
     {
-      list.map((l, i) => (
+      list === undefined ? "" : list.map((l, i) => (
       <ListItem
       roundAvatar
       avatar={{uri:l.avatar_url}}
-      key={i}
-      title={l.name}
-      onPress={() => {this.handleListItemPress(l.name, l.position)}}
+      key={l.Key}
+      title={l.Person.Name}
+      onPress={() => {this.handleListItemPress(l.Person.Name, l.Person.Position, l.Key)}}
+      onLongPress={() => {this.handleLongPress(l, i)}}
       />
       ))
-}
-</List>
-</View>
-);
+    }
+    </List>
+  </View>
+  );
 }
 }
 
