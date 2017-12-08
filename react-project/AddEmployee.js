@@ -26,7 +26,7 @@ export default class AddEmployee extends React.Component {
   handleAdd() {
     this.ref.push(this.state)
     const { navigate } = this.props.navigation
-    navigate('Main')
+    navigate('Main', {"entityAdd" : this.state})
   }
 
   render() {    

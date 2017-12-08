@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, StatusBar, Picker } from 'react-native';
+import { AsyncStorage, StyleSheet, Text, View, Linking, StatusBar, Picker } from 'react-native';
 import { FormLabel, FormInput, Button, List, ListItem } from 'react-native-elements'
 import { StackNavigator } from 'react-navigation'
 import * as firebase from "firebase"
@@ -30,9 +30,12 @@ export default class Details extends React.Component {
     title: 'Details',
   };
 
-  handlePress() {
-    let ref = firebase.database().ref("/employees/" + this.state.key);
+  async handlePress() {
+    let ref = firebase.database().ref("/employees/" + this.state.key)
     ref.set({"Name" : this.state.name, "Position" : this.state.position})
+    const currentToAdd = JSON.parse(await AsyncStorage.getItem("offlineAdd"))
+    currentToAdd.push({"Key" : this.state.key, "Person" : {"Name" : this.state.name, "Position" : this.state.position}})
+    AsyncStorage.setItem("offlineAdd", JSON.stringify(currentToAdd))
     const { navigate } = this.props.navigation;
     navigate('Main', {"name" : this.state.name, "position" : this.state.position})
   }
@@ -47,7 +50,6 @@ export default class Details extends React.Component {
     }
     let result = Object.keys(data).map(function (key) { return {'position' : key, "number" : data[key]}; });
     this.setState({data: result})
-    console.log(this.state.data)
   }
 
   render() {

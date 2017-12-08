@@ -6,13 +6,13 @@ import { StackNavigator } from 'react-navigation'
 import * as firebase from "firebase";
 
 var config = {
-    apiKey: "AIzaSyCDJdA7KFgvMfwpeCAmGfYwTlK9gUh_ZDg",
-    authDomain: "ma-react-native.firebaseapp.com",
-    databaseURL: "https://ma-react-native.firebaseio.com",
-    projectId: "ma-react-native",
-    storageBucket: "ma-react-native.appspot.com",
-    messagingSenderId: "261668730554"
-  };
+  apiKey: "AIzaSyCDJdA7KFgvMfwpeCAmGfYwTlK9gUh_ZDg",
+  authDomain: "ma-react-native.firebaseapp.com",
+  databaseURL: "https://ma-react-native.firebaseio.com",
+  projectId: "ma-react-native",
+  storageBucket: "ma-react-native.appspot.com",
+  messagingSenderId: "261668730554"
+};
 firebase.initializeApp(config);
 
 export default class Main extends React.Component {
@@ -25,6 +25,10 @@ export default class Main extends React.Component {
     };
     this.ref = firebase.database().ref("/employees");
     screen: Main;
+  }
+
+  generateKey() {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
   }
 
   static navigationOptions = {
@@ -65,6 +69,23 @@ export default class Main extends React.Component {
     NetInfo.isConnected.fetch().done(async (isConnected) => {
       if ( isConnected )
       {
+        console.log("ON")
+        const offAdd = JSON.parse(await AsyncStorage.getItem("offlineAdd"))
+        if (offAdd) {
+          for (var x in offAdd) {
+            this.ref.child(offAdd[x]['Key']).set(offAdd[x]['Person']) 
+          }
+          AsyncStorage.removeItem("offlineAdd")
+        }
+
+        const offRem = JSON.parse(await AsyncStorage.getItem("offlineRemove"))
+        if (offRem) {
+          for (var x in offRem) {
+            this.ref.child(offRem[x]["Key"]).remove()
+          }
+          AsyncStorage.removeItem("offlineRemove")
+        }
+
         let list = this.ref.once('value').then((data) => {
           data = data.val()
           data2 = Object.keys(data).map(function (key) { return {'Person' : data[key], "Key" : key}; });
@@ -74,8 +95,21 @@ export default class Main extends React.Component {
       }
       else
       {
+        console.log("OFF")
         let list = JSON.parse(await AsyncStorage.getItem("list"))
         this.setState({list})
+        if (this.props.navigation.state.params !== undefined && this.props.navigation.state.params.entityAdd !== undefined) {
+          let currentToAdd = JSON.parse(await AsyncStorage.getItem("offlineAdd"))
+          if (!currentToAdd) {
+            currentToAdd = []
+          }
+          const genKey = this.generateKey()
+          currentToAdd.push({"Key" : genKey, "Person" : this.props.navigation.state.params.entityAdd})
+          await AsyncStorage.setItem("offlineAdd", JSON.stringify(currentToAdd))
+          currentList = this.state.list
+          currentList.push({"Key" : genKey, 'Person' : this.props.navigation.state.params.entityAdd })
+          this.setState({"list" : currentList})
+        }
       }
     });
   }
@@ -94,12 +128,30 @@ export default class Main extends React.Component {
     }
   }
 
-  acceptDelete(l, idx) {
-    let deleteUrl = this.ref.child(l.Key)
-    deleteUrl.remove()
-    let list = this.state.list
-    list.splice(idx, 1)
-    this.setState({list}) 
+  async acceptDelete(l, idx) {
+    NetInfo.isConnected.fetch().done(async (isConnected) => {
+      if ( isConnected )
+      {
+        let deleteUrl = this.ref.child(l.Key)
+        deleteUrl.remove()
+        let list = this.state.list
+        list.splice(idx, 1)
+        this.setState({list})
+      }
+      else
+      {
+        let offlineRemove = JSON.parse(await AsyncStorage.getItem("offlineRemove"))
+        if (!offlineRemove) {
+          offlineRemove = []
+        }
+        offlineRemove.push(l)
+        let list = this.state.list
+        list.splice(idx, 1)
+        AsyncStorage.setItem("list", JSON.stringify(list))
+        AsyncStorage.setItem("offlineRemove", JSON.stringify(offlineRemove))
+        this.setState({list})
+      }
+    });
   }
 
   async handleLongPress(l, idx) {
@@ -108,11 +160,11 @@ export default class Main extends React.Component {
       'Delete ' + l.Person.Name,
       'Are you sure you want to delete this person?',
       [
-        {text: 'Yes', onPress: () => this.acceptDelete(l, idx)},
-        {text: 'No', style: 'cancel'},
+      {text: 'Yes', onPress: () => this.acceptDelete(l, idx)},
+      {text: 'No', style: 'cancel'},
       ],
       { cancelable: false }
-    )
+      )
   }
 
   render() {
@@ -122,26 +174,26 @@ export default class Main extends React.Component {
       <StatusBar hidden={true} />
       <FormLabel>Name</FormLabel>
       <FormInput ref= {(el) => { this.emailTo = el; }} onChangeText={(emailTo) => this.setState({emailTo})} value={this.state.emailTo}/>
-    <Button title="SEND EMAIL" raised onPress={() => this.sendEmail()}></Button>
-    <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
+      <Button title="SEND EMAIL" raised onPress={() => this.sendEmail()}></Button>
+      <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
 
-    <List containerStyle={{width: 300}}>
-    {
-      list === undefined ? "" : list.map((l, i) => (
-      <ListItem
-      roundAvatar
-      avatar={{uri:l.avatar_url}}
-      key={l.Key}
-      title={l.Person.Name}
-      onPress={() => {this.handleListItemPress(l.Person.Name, l.Person.Position, l.Key)}}
-      onLongPress={() => {this.handleLongPress(l, i)}}
-      />
-      ))
-    }
-    </List>
-  </View>
-  );
-}
+      <List containerStyle={{width: 300}}>
+      {
+        list === undefined ? "" : list.map((l, i) => (
+          <ListItem
+          roundAvatar
+          avatar={{uri:l.avatar_url}}
+          key={l.Key}
+          title={l.Person.Name}
+          onPress={() => {this.handleListItemPress(l.Person.Name, l.Person.Position, l.Key)}}
+          onLongPress={() => {this.handleLongPress(l, i)}}
+          />
+          ))
+      }
+      </List>
+      </View>
+      );
+  }
 }
 
 const styles = StyleSheet.create({
