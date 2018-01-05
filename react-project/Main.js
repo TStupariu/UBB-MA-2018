@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, StatusBar, Alert, AsyncStorage, NetInfo } from 'react-native';
+import { StyleSheet, Text, View, Linking, StatusBar, Alert, AsyncStorage, NetInfo, TextInput } from 'react-native';
 import { FormLabel, FormInput, Button, List, ListItem } from 'react-native-elements'
 import { Details } from './Details'
 import { StackNavigator } from 'react-navigation'
 import * as firebase from "firebase";
+import LoginForm from './LoginForm';
 
 var config = {
   apiKey: "AIzaSyCDJdA7KFgvMfwpeCAmGfYwTlK9gUh_ZDg",
@@ -22,6 +23,10 @@ export default class Main extends React.Component {
     this.state = { 
       emailTo: "",
       list : [],
+      authUser : {
+        email: '',
+        role: 'user', 
+      },
     };
     this.ref = firebase.database().ref("/employees");
     screen: Main;
@@ -61,7 +66,23 @@ export default class Main extends React.Component {
           list[i].position = position;
         }
       }
-      this.setState({list});  
+      this.setState({list});
+
+      let userEmail = this.props.navigation.state.params.user_email  
+      let userRole = 'user'
+      firebase.database().ref("/users").once('value').then((data) => {
+        let users = data.val()
+        console.log(users)
+        for(let x in users) {
+          if (users[x].email === userEmail) {
+            userRole = users[x].role
+            this.setState({authUser: {
+              'email' : userEmail,
+              'role' : userRole,
+            }})
+          }
+        }
+      })
     }
   }
 
@@ -116,7 +137,7 @@ export default class Main extends React.Component {
 
   handleListItemPress(name, position, key) {
     const { navigate } = this.props.navigation;
-    navigate('Details', {"name" : name, "position" : position, "key" : key})
+    navigate('Details', {"name" : name, "position" : position, "key" : key, "userRole" : this.state.authUser.role})
   }
 
   setPosition(name,position) {
@@ -169,14 +190,16 @@ export default class Main extends React.Component {
 
   render() {
     let list = this.state.list;
+    console.log(this.state.authUser)
     return (
       <View style={styles.container}>
       <StatusBar hidden={true} />
       <FormLabel>Name</FormLabel>
       <FormInput ref= {(el) => { this.emailTo = el; }} onChangeText={(emailTo) => this.setState({emailTo})} value={this.state.emailTo}/>
       <Button title="SEND EMAIL" raised onPress={() => this.sendEmail()}></Button>
-      <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
-
+      {this.state.authUser.role !== "user" ? (
+        <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
+      ) : null}
       <List containerStyle={{width: 300}}>
       {
         list === undefined ? "" : list.map((l, i) => (

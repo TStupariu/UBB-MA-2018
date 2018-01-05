@@ -19,7 +19,10 @@ export default class Details extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({name: this.props.navigation.state.params.name, position: this.props.navigation.state.params.position, key: this.props.navigation.state.params.key })
+    this.setState({name: this.props.navigation.state.params.name, 
+                  position: this.props.navigation.state.params.position, 
+                  key: this.props.navigation.state.params.key,
+                  role: this.props.navigation.state.params.userRole })
   }
 
   componentDidMount() {
@@ -33,7 +36,8 @@ export default class Details extends React.Component {
   async handlePress() {
     let ref = firebase.database().ref("/employees/" + this.state.key)
     ref.set({"Name" : this.state.name, "Position" : this.state.position})
-    const currentToAdd = JSON.parse(await AsyncStorage.getItem("offlineAdd"))
+    let currentToAdd = JSON.parse(await AsyncStorage.getItem("offlineAdd"))
+    currentToAdd = currentToAdd === null ? [] : currentToAdd 
     currentToAdd.push({"Key" : this.state.key, "Person" : {"Name" : this.state.name, "Position" : this.state.position}})
     AsyncStorage.setItem("offlineAdd", JSON.stringify(currentToAdd))
     const { navigate } = this.props.navigation;
@@ -53,18 +57,21 @@ export default class Details extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <View style={styles.container}>
       <StatusBar hidden={true} />
       <FormLabel>Name</FormLabel>
-      <FormInput value={this.state.name}/>
+      <FormInput value={this.state.name} onChangeText={name => this.setState({ name })}/>
       <FormLabel>Position</FormLabel>
       <Picker style={{width: 100}} selectedValue={this.state.position} onValueChange={(itemValue, itemIndex) => this.setState({position: itemValue})}>
         <Picker.Item label="CTO" value="CTO" />
         <Picker.Item label="CFO" value="CFO" />
         <Picker.Item label="CEO" value="CEO" />
       </Picker>
-      <Button raised title="SAVE" onPress={() => {this.handlePress();}}></Button>
+      {
+        this.state.role !== 'user' ? (<Button raised title="SAVE" onPress={() => {this.handlePress();}}></Button>) : null
+      }
       <VictoryChart
         domainPadding={40}
       >
