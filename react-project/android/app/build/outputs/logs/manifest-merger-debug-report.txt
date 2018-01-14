@@ -1,0 +1,418 @@
+-- Merging decision tree log ---
+permission#com.reactemployees.permission.C2D_MESSAGE
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:11:5-13:47
+	android:protectionLevel
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:13:9-44
+	android:name
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:12:9-63
+uses-permission#com.reactemployees.permission.C2D_MESSAGE
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:14:22-76
+category#com.reactemployees
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:45:17-61
+	android:name
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:45:27-58
+manifest
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+MERGED from [:react-native-push-notification] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-google-sign-in] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-google-sign-in/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-facebook-login] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-facebook-login/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:2:1-15:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:21:1-40:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:16:1-24:12
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:2:1-41:12
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:16:1-26:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b373ad49a276df1e046c52d406902ec0/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ee7aa0d6b4d345b4dc9c452b3cc5a4d9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2cacb07c818217721d2ebbedc4f7b958/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b694d79461e2704bc4d21387379b2ab5/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ac15397483954a0ef31e00132bbd6b80/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.4.aar/68654c0eac63f913d3c725f19442653e/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/d473036d3453f6eb4ab8a1cddd5ccede/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:customtabs:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/customtabs-23.4.0.aar/2aece98892f566bfc566d1ca36f57745/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/e077e99f543699cacc3f024fc7334c4e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/359c3941795e49fcd2f91267da747a39/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/6d35e58e0252828e3203a0363b25393e/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.4.0.aar/4a6241bffcc988869431839eba20bb13/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/48a298b3de0651afe4506fa1faebb5a1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e400aa740d926dfe4f7b93c438afe5ee/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a72bba66bc557c8e12ef0d5d4aaeacb8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/1b5116ba91a3e8d9468b2e493fb1b966/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/79fbba4466deab56f385ff2b5a968614/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/09256767da8fc491890daf9bc1b139e5/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/20a2e9614f4fec3152798f444ea874df/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/f03c20062dc8a437ca22120f7ec592da/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/aac2fc48b43f22049cc6fc63de807f20/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12
+	package
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:2:5-33
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [:react-native-firebase] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:7:22-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:15:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:16:22-78
+uses-sdk
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:18:5-20:41
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:18:5-20:41
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:18:5-20:41
+MERGED from [:react-native-push-notification] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-push-notification/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-sign-in] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-google-sign-in/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-sign-in] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-google-sign-in/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-facebook-login] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-facebook-login/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-facebook-login] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-facebook-login/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:17:5-43
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:17:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b373ad49a276df1e046c52d406902ec0/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b373ad49a276df1e046c52d406902ec0/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ee7aa0d6b4d345b4dc9c452b3cc5a4d9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ee7aa0d6b4d345b4dc9c452b3cc5a4d9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2cacb07c818217721d2ebbedc4f7b958/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/2cacb07c818217721d2ebbedc4f7b958/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b694d79461e2704bc4d21387379b2ab5/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b694d79461e2704bc4d21387379b2ab5/AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.4.aar/68654c0eac63f913d3c725f19442653e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.4.aar/68654c0eac63f913d3c725f19442653e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/d473036d3453f6eb4ab8a1cddd5ccede/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/d473036d3453f6eb4ab8a1cddd5ccede/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:customtabs:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/customtabs-23.4.0.aar/2aece98892f566bfc566d1ca36f57745/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/customtabs-23.4.0.aar/2aece98892f566bfc566d1ca36f57745/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/e077e99f543699cacc3f024fc7334c4e/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/e077e99f543699cacc3f024fc7334c4e/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/359c3941795e49fcd2f91267da747a39/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/359c3941795e49fcd2f91267da747a39/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/6d35e58e0252828e3203a0363b25393e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/6d35e58e0252828e3203a0363b25393e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.4.0.aar/4a6241bffcc988869431839eba20bb13/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.4.0.aar/4a6241bffcc988869431839eba20bb13/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/48a298b3de0651afe4506fa1faebb5a1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/48a298b3de0651afe4506fa1faebb5a1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e400aa740d926dfe4f7b93c438afe5ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e400aa740d926dfe4f7b93c438afe5ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a72bba66bc557c8e12ef0d5d4aaeacb8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a72bba66bc557c8e12ef0d5d4aaeacb8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/1b5116ba91a3e8d9468b2e493fb1b966/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/1b5116ba91a3e8d9468b2e493fb1b966/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/79fbba4466deab56f385ff2b5a968614/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/79fbba4466deab56f385ff2b5a968614/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/09256767da8fc491890daf9bc1b139e5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/09256767da8fc491890daf9bc1b139e5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/20a2e9614f4fec3152798f444ea874df/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/20a2e9614f4fec3152798f444ea874df/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/f03c20062dc8a437ca22120f7ec592da/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/f03c20062dc8a437ca22120f7ec592da/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/aac2fc48b43f22049cc6fc63de807f20/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/aac2fc48b43f22049cc6fc63de807f20/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:18:5-20:41
+INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:18:5-20:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:20:9-38
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:19:9-35
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:22:5-63:19
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.49.5] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/react-native-0.49.5.aar/d332ca045c4349768db5427ba006b082/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/304607436729546b11c954c3a7f31d39/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:19:5-25:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b694d79461e2704bc4d21387379b2ab5/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/b694d79461e2704bc4d21387379b2ab5/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ac15397483954a0ef31e00132bbd6b80/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/ac15397483954a0ef31e00132bbd6b80/AndroidManifest.xml:2:3-17
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/d473036d3453f6eb4ab8a1cddd5ccede/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/d473036d3453f6eb4ab8a1cddd5ccede/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:customtabs:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/customtabs-23.4.0.aar/2aece98892f566bfc566d1ca36f57745/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/customtabs-23.4.0.aar/2aece98892f566bfc566d1ca36f57745/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/e077e99f543699cacc3f024fc7334c4e/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/e077e99f543699cacc3f024fc7334c4e/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/359c3941795e49fcd2f91267da747a39/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/359c3941795e49fcd2f91267da747a39/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/6d35e58e0252828e3203a0363b25393e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/6d35e58e0252828e3203a0363b25393e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.4.0.aar/4a6241bffcc988869431839eba20bb13/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.4.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.4.0.aar/4a6241bffcc988869431839eba20bb13/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/79fbba4466deab56f385ff2b5a968614/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/79fbba4466deab56f385ff2b5a968614/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/09256767da8fc491890daf9bc1b139e5/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/09256767da8fc491890daf9bc1b139e5/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/20a2e9614f4fec3152798f444ea874df/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/20a2e9614f4fec3152798f444ea874df/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/f03c20062dc8a437ca22120f7ec592da/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/f03c20062dc8a437ca22120f7ec592da/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/aac2fc48b43f22049cc6fc63de807f20/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/aac2fc48b43f22049cc6fc63de807f20/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:25:7-39
+	android:icon
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:26:7-41
+	android:allowBackup
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:24:7-33
+	android:theme
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:27:7-38
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:23:7-38
+activity#com.reactemployees.MainActivity
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:28:7-37:18
+	android:label
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:30:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:32:9-51
+	android:configChanges
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:31:9-79
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:29:9-37
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:33:9-36:25
+action#android.intent.action.MAIN
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:34:13-65
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:34:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:35:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:38:7-84
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:38:17-81
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:39:7-47:20
+	android:exported
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:41:13-36
+	android:permission
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:42:13-73
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:40:13-66
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.reactemployees
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:43:13-46:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:44:17-81
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:44:25-78
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:49:9-110
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:49:19-107
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:50:9-54:20
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:50:19-115
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:51:13-53:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:52:17-79
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:52:25-76
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:55:9-118
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:55:18-116
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:57:13-107
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:59:13-61:29
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:33:9-36:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:34:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:37:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.16.1] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/AndroidManifest.xml:37:19-68
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/783fd003a0b64dbe4dc2e3bbdad88063/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/fa2eff75abc81d6697bcac408e4e1cad/AndroidManifest.xml:20:22-79
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/05c3f3c8d0fb06ac8e8f7dbf4e2bffa7/AndroidManifest.xml:39:22-90
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.4.aar/54447059ab77f7225a26e72be803b2d1/AndroidManifest.xml:24:18-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/src/main/AndroidManifest.xml:1:1-65:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/AndroidManifest.xml:20:20-65

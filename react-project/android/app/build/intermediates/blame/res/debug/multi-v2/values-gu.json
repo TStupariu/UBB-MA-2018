@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tudorstupariu/rNative/UBB-MA-2018/react-project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
+            "map": [
+                {
+                    "source": "/Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/6320679e754a39f868d3d1aac699a290/res/values-gu/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,389,587,710,820,1017,1137,1262,1469,1575,1770,1893,2095,2271,2358,2450",
+                        "endColumns": "105,197,122,109,196,119,124,206,105,194,122,201,175,86,91,106",
+                        "endOffsets": "388,586,709,819,1016,1136,1261,1468,1574,1769,1892,2094,2270,2357,2449,2556"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1684,1794,1992,2119,2233,2430,2554,2889,3096,3206,3401,3528,3730,3910,4001,4097",
+                        "endColumns": "109,197,126,113,196,123,128,206,109,194,126,201,179,90,95,110",
+                        "endOffsets": "1789,1987,2114,2228,2425,2549,2678,3091,3201,3396,3523,3725,3905,3996,4092,4203"
+                    }
+                },
+                {
+                    "source": "/Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/4c9dfa3355217b86066d7be50f458ddc/res/values-gu/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "205",
+                        "endOffsets": "490"
+                    },
+                    "to": {
+                        "startLines": "26",
+                        "startColumns": "4",
+                        "startOffsets": "2683",
+                        "endColumns": "205",
+                        "endOffsets": "2884"
+                    }
+                },
+                {
+                    "source": "/Users/tudorstupariu/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.16.1.aar/ed2f80c9713b04c889fbf4d891b261b0/res/values-gu/values-gu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,223,334,455,548,619,691,761,833,909,1002,1080,1158,1248,1356,1420,1487,1634",
+                        "endColumns": "167,110,120,92,70,71,69,71,75,92,77,77,89,107,63,66,146,60",
+                        "endOffsets": "218,329,450,543,614,686,756,828,904,997,1075,1153,1243,1351,1415,1482,1629,1690"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,273,384,505,598,669,741,811,883,959,1052,1130,1208,1298,1406,1470,1537,4208",
+                        "endColumns": "167,110,120,92,70,71,69,71,75,92,77,77,89,107,63,66,146,60",
+                        "endOffsets": "268,379,500,593,664,736,806,878,954,1047,1125,1203,1293,1401,1465,1532,1679,4264"
+                    }
+                }
+            ]
+        }
+    ]
+}

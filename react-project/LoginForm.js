@@ -4,7 +4,7 @@ import * as firebase from "firebase";
 
 class LoginForm extends Component {
     
-    state = { email: '', password: '', error: '', loading: false, name: '', role: '', switchValue: false }
+    state = { email: 'a@a.ro', password: 'password', error: '', loading: false, name: '', role: '', switchValue: false }
 
     constructor(props) {
         super(props)

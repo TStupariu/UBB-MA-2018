@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, StatusBar, Alert, AsyncStorage, NetInfo, TextInput } from 'react-native';
-import { FormLabel, FormInput, Button, List, ListItem } from 'react-native-elements'
+import { StyleSheet, Text, View, Button, Linking, StatusBar, Alert, AsyncStorage, NetInfo, TextInput, FlatList, ListItem } from 'react-native';
+// import { FormLabel, FormInput, List, ListItem } from 'react-native-elements'
 import { Details } from './Details'
 import { StackNavigator } from 'react-navigation'
 import * as firebase from "firebase";
@@ -136,6 +136,22 @@ export default class Main extends React.Component {
   }
 
   handleListItemPress(name, position, key) {
+    var PushNotification = require('react-native-push-notification');
+
+    PushNotification.configure({
+      onNotification: (notification) => {
+        console.log( 'NOTIFICATION:', notification );
+        const { navigate } = this.props.navigation;
+        navigate('Details', {"name" : name, "position" : position, "key" : key, "userRole" : this.state.authUser.role})
+      },
+      popInitialNotification: true,
+      requestPermissions: true,
+    });
+    PushNotification.localNotificationSchedule({
+      message: "See recent checked profile!", // (required)
+      date: new Date(Date.now() + (10 * 1000)) // in 10 secs
+    });
+
     const { navigate } = this.props.navigation;
     navigate('Details', {"name" : name, "position" : position, "key" : key, "userRole" : this.state.authUser.role})
   }
@@ -149,7 +165,8 @@ export default class Main extends React.Component {
     }
   }
 
-  async acceptDelete(l, idx) {
+  async acceptDelete(l) {
+    var idx = this.state.list.findIndex(i => i.Person.Name === l.Person.Name)
     NetInfo.isConnected.fetch().done(async (isConnected) => {
       if ( isConnected )
       {
@@ -175,17 +192,35 @@ export default class Main extends React.Component {
     });
   }
 
-  async handleLongPress(l, idx) {
+  async handleLongPress(l) {
     var value = await AsyncStorage.getItem("list");
     Alert.alert(
       'Delete ' + l.Person.Name,
       'Are you sure you want to delete this person?',
       [
-      {text: 'Yes', onPress: () => this.acceptDelete(l, idx)},
+      {text: 'Yes', onPress: () => this.acceptDelete(l)},
       {text: 'No', style: 'cancel'},
       ],
       { cancelable: false }
       )
+  }
+
+  renderFlatListItem(item) {
+    return (
+      <View key={"parentView"+item.Key} style={styles.itemContainer}>
+        <Text style={styles.itemText}
+              onPress={() => this.handleListItemPress(item.Person.Name, item.Person.Position, item.Key)}
+              onLongPress={() => this.handleLongPress(item)}>
+              {item.Person.Name + " | " + item.Person.Position}
+        </Text>
+        <View
+          style={{
+            borderBottomColor: 'black',
+            borderBottomWidth: 1,
+          }}
+        />
+      </View>
+     )
   }
 
   render() {
@@ -194,35 +229,30 @@ export default class Main extends React.Component {
     return (
       <View style={styles.container}>
       <StatusBar hidden={true} />
-      <FormLabel>Name</FormLabel>
-      <FormInput ref= {(el) => { this.emailTo = el; }} onChangeText={(emailTo) => this.setState({emailTo})} value={this.state.emailTo}/>
+      <Text>Name</Text>
+      <TextInput ref= {(el) => { this.emailTo = el; }} onChangeText={(emailTo) => this.setState({emailTo})} value={this.state.emailTo}/>
       <Button title="SEND EMAIL" raised onPress={() => this.sendEmail()}></Button>
       {this.state.authUser.role !== "user" ? (
         <Button title="Add" raised onPress={() => this.handleAdd()}></Button>
       ) : null}
-      <List containerStyle={{width: 300}}>
       {
-        list === undefined ? "" : list.map((l, i) => (
-          <ListItem
-          roundAvatar
-          avatar={{uri:l.avatar_url}}
-          key={l.Key}
-          title={l.Person.Name}
-          onPress={() => {this.handleListItemPress(l.Person.Name, l.Person.Position, l.Key)}}
-          onLongPress={() => {this.handleLongPress(l, i)}}
-          />
-          ))
+        this.state.list[0] !== undefined ? (<FlatList
+          data={this.state.list}
+          renderItem={({item}) => this.renderFlatListItem(item)}
+        />) : null
       }
-      </List>
       </View>
       );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fa3',
-    alignItems: 'center',
+  itemContainer: {
+    backgroundColor: '#fa3'
   },
+  itemText: {
+    lineHeight: 40,
+    fontSize: 30,
+    textAlign: 'center'
+  }
 });

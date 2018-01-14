@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, StatusBar, Picker, AsyncStorage } from 'react-native';
-import { FormLabel, FormInput, Button, List, ListItem } from 'react-native-elements'
+import { StyleSheet, Text, Button, View, Linking, StatusBar, Picker, AsyncStorage, TextInput, List, ListItem } from 'react-native';
+// import { FormLabel, FormInput, List, ListItem } from 'react-native-elements'
 import { StackNavigator } from 'react-navigation'
 import * as firebase from "firebase"
 
@@ -33,9 +33,9 @@ export default class AddEmployee extends React.Component {
     return (
       <View style={styles.container}>
       <StatusBar hidden={true} />
-      <FormLabel>Name</FormLabel>
-      <FormInput ref= {(el) => { this.Name = el; }} onChangeText={(Name) => this.setState({Name})} value={this.state.Name}/>
-      <FormLabel>Position</FormLabel>
+      <Text>Name</Text>
+      <TextInput ref= {(el) => { this.Name = el; }} onChangeText={(Name) => this.setState({Name})} value={this.state.Name}/>
+      <Text>Position</Text>
       <Picker style={{width: 100}} selectedValue={this.state.Position} onValueChange={(itemValue, itemIndex) => this.setState({Position: itemValue})}>
         <Picker.Item label="CTO" value="CTO" />
         <Picker.Item label="CFO" value="CFO" />
@@ -49,8 +49,5 @@ export default class AddEmployee extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fa3',
-    alignItems: 'center',
   },
 });
